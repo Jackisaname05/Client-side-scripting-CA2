@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client side scripting Ca2</title>
+        <style>
+            body {
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 20px;
+                background-color: #291e03;
+            }
+            h1 {
+                text-align: center;
+                color: #d8a704;
+            }
+            .category {
+                margin-top: 35px;
+                color: #d8a704;
+            }
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                justify-content: center;
+            }
+            .card {
+                border: 1px solid #a27f0d;
+                border-radius: 10px;
+                padding: 15px;
+                max-width: 300px;
+                background-color: #291e03;
+                box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+            }
+            .card img {
+                width: 100%;
+                border-radius: 5px;
+            }
+            .card h2 {
+                margin: 10px 0;
+                background-color: #291e03;
+                border-radius: 5px;
+            }
+            .card p {
+                height: 100px;
+                overflow-y: auto; 
+                font-size: 0.9em;
+                text-align: justify;
+                margin: 10px 0;
+                padding: 5px;
+                border: 1px solid #a27f0d;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>D&D 5e Data Explorer</h1>
+
+        <div class="category" id="classes">
+            <h2>Classes</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="category" id="races">
+            <h2>Races</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="category" id="conditions">
+            <h2>Conditions</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="category" id="spells">
+            <h2>Spells</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="category" id="feats">
+            <h2>Feats</h2>
+            <div class="card-container"></div>
+        </div>
+        <div class="category" id="backgrounds">
+            <h2>Backgrounds</h2>
+            <div class="card-container"></div>
+        </div>
+
+        <script src="script1.js"></script>
+    </body>
+</html>
